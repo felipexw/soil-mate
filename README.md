@@ -104,11 +104,6 @@ The readings come out of the Pro Mini's TX pin at 115200 baud. The Uno cannot sh
 - DS1302 drift: about 1 minute or more per month; resync the time every few months.
 - A regular CR2032 is fine on DS1302 modules (they usually have no charging circuit).
 
-## To do
-1. ~~Review `code.txt` and port the code.~~ Done: `src/main.cpp` builds for the Pro Mini. **Not yet confirmed on the board:** the last upload failed read-back verification (noisy ISP link), so a clean flash and a check of the matrix and sensor are still pending.
-2. Calibrate the capacitive sensor (dry and in-water values) and set `DRY_ABOVE` and `WET_BELOW`.
-3. Check in the STL that the board pocket fits the Pro Mini (33 × 18 mm, no USB connector) and plan where the power cable enters; its mounting doesn't match the original board's.
-4. Later: v2 with the DS1302.
 
 ## License and credits
 The design, the face bitmaps and the original sketch are by ChromeCraft and are distributed under the MakerWorld Standard Digital File License (personal use). This repository contains a derived port and grants no rights to the original files, and the original `code.txt`, STL and 3MF files are not included. Check the original license before reusing anything beyond personal use.
